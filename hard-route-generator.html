@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hard Route Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    #output {
+      font-size: 24px;
+      margin-top: 30px;
+      color: #004e89;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Random 5.14c+ Route Generator</h1>
+  <p>Feeling strong? Click below to get a random elite-level route to project.</p>
+  <button onclick="generateRoute()">Generate Route</button>
+  <div id="output"></div>
+
+  <script>
+    const routes = [
+      "Perfecto Mundo – 5.15c – Margalef, Spain",
+      "La Dura Dura – 5.15c – Oliana, Spain",
+      "Bibliographie – 5.15d – Céüse, France",
+      "Jumbo Love – 5.15b – Clark Mountain, USA",
+      "Change – 5.15c – Flatanger, Norway",
+      "Eagle-4 – 5.15b – Saint Léger, France",
+      "King Capella – 5.15b – Siurana, Spain",
+      "Bone Tomahawk – 5.15a – Moab, USA",
+      "Lapsus – 5.15b – Andonno, Italy",
+      "Realization (Biographie) – 5.15a – Céüse, France",
+      "Fight or Flight – 5.15b – Oliana, Spain",
+      "Stoking the Fire – 5.15b – Santa Linya, Spain",
+      "Era Vella – 5.14d – Margalef, Spain",
+      "Joe Blau – 5.14c – Oliana, Spain",
+      "Chilam Balam – 5.15a – Villanueva del Rosario, Spain",
+      "Es Pontàs – 5.15a – Mallorca, Spain",
+      "Power Inverter – 5.15a – Oliana, Spain",
+      "Ali Hulk Sit Start Extension Total – 5.15b – Rodellar, Spain",
+      "Thor's Hammer – 5.15a – Flatanger, Norway",
+      "Papichulo – 5.15a – Oliana, Spain",
+      "Vasil Vasil – 5.15c – Sloup, Czech Republic",
+      "Joe Mama – 5.15a – Oliana, Spain",
+      "Estado Critico – 5.14d – Siurana, Spain",
+      "Pachamama – 5.15a – Oliana, Spain",
+      "Hypnotized Minds – 5.15a – RMNP, USA",
+      "Directa Open Your Mind – 5.14d – Santa Linya, Spain",
+      "Mejorando Imagen – 5.14d – Margalef, Spain",
+      "Chaxi Raxi – 5.15a – Oliana, Spain",
+      "Perfecto Mundo – 5.15c – Margalef, Spain",
+      "Delincuente Natural – 5.14d – Margalef, Spain",
+      "Off the Wagon – 5.14d – Magic Wood, Switzerland",
+      "Jungle Boogie – 5.15a – Céüse, France",
+      "Golpe de Estado – 5.15a – Siurana, Spain",
+      "Seleccio Anal – 5.14d – Margalef, Spain",
+      "Apocalipsis de la Gioconda – 5.14d – Rodellar, Spain",
+      "Mandanga Total – 5.14d – Cuenca, Spain",
+      "Esclatamasters – 5.14d – Perles, Spain",
+      "La Planta de Shiva – 5.15b – Villanueva del Rosario, Spain",
+      "Mutation – 5.15a – Raven Tor, UK",
+      "Rainshadow – 5.14d – Malham Cove, UK",
+      "Revolution – 5.14d – Raven Tor, UK",
+      "Victimas Perez – 5.14d – Margalef, Spain",
+      "Bad Girls Club – 5.14d – Rifle, USA",
+      "Necessary Evil – 5.14c – Virgin River Gorge, USA",
+      "Lucid Dreaming – 5.15a – Bishop, USA",
+      "The Crew – 5.14c – Rifle, USA",
+      "Supernova – 5.14c – Red River Gorge, USA",
+      "Pure Imagination – 5.14c – Red River Gorge, USA",
+      "Omaha Beach – 5.14a – Red River Gorge, USA",
+      "Transworld Depravity – 5.14a – Red River Gorge, USA",
+      "The Fly – 5.14d – Rumney, USA",
+      "China Beach – 5.14b – Rumney, USA",
+      "Just Do It – 5.14c – Smith Rock, USA",
+      "Bunda de Fora – 5.14d – Acephale, Canada",
+      "Dreamcatcher – 5.14d – Squamish, Canada",
+      "Pulse – 5.14c – Acephale, Canada",
+      "Necessary Evil – 5.14c – Virgin River Gorge, USA",
+      "Thor's Hammer – 5.15a – Flatanger, Norway",
+      "Change – 5.15c – Flatanger, Norway",
+      "Move – 5.15b – Flatanger, Norway",
+      "Silence – 5.15d – Flatanger, Norway",
+      "Fightclub – 5.14d – Canmore, Canada",
+      "White Zombie – 5.14a – Baltzola Cave, Spain",
+      "Fish Eye – 5.14b – Oliana, Spain",
+      "Mind Control – 5.14c – Oliana, Spain",
+      "8c+ – 5.14c – Flatanger, Norway",
+      "Fuego Blanco – 5.14c – Villanueva del Rosario, Spain"
+    ];
+
+    function generateRoute() {
+      const randomIndex = Math.floor(Math.random() * routes.length);
+      document.getElementById("output").textContent = routes[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
